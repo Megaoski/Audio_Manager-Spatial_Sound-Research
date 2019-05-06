@@ -1,0 +1,4 @@
+﻿  j1Scene.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1scene.cpp(79): warning C4101: 'y': unreferenced local variable
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1scene.cpp(79): warning C4101: 'x': unreferenced local variable
+  Motor2D.vcxproj -> C:\Users\Usuario\Documents\GitHub\Audio_Manager-Spatial_Sound-Research\Debug\Fog of War Research.exe
