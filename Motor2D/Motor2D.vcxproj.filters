@@ -22,9 +22,6 @@
     <ClCompile Include="j1Input.cpp">
       <Filter>Desenvolupament  ========\Modules\Core</Filter>
     </ClCompile>
-    <ClCompile Include="j1Map.cpp">
-      <Filter>Desenvolupament  ========\Modules\Core</Filter>
-    </ClCompile>
     <ClCompile Include="j1Render.cpp">
       <Filter>Desenvolupament  ========\Modules\Core</Filter>
     </ClCompile>
@@ -76,9 +73,6 @@
       <Filter>Desenvolupament  ========\Modules\Core</Filter>
     </ClInclude>
     <ClInclude Include="j1Input.h">
-      <Filter>Desenvolupament  ========\Modules\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Map.h">
       <Filter>Desenvolupament  ========\Modules\Core</Filter>
     </ClInclude>
     <ClInclude Include="j1Render.h">

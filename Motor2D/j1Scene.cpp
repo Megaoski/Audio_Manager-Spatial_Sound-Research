@@ -6,7 +6,6 @@
 #include "j1Audio.h"
 #include "j1Render.h"
 #include "j1Window.h"
-#include "j1Map.h"
 #include "j1Scene.h"
 #include "j2Entity.h"
 #include "j2EntityManager.h"

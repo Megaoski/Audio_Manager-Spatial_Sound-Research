@@ -62,9 +62,7 @@ public:
 	
 	
 
-	// Boolean that the FowManager will check
-	bool provides_visibility = false;
-	bool visible = true;
+	
 
 	//AUDIO IN ENTITY
 	/*unsigned int fx_entity = 0;*/
