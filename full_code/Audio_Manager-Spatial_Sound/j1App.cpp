@@ -12,7 +12,6 @@
 #include "j1Textures.h"
 #include "j1Audio.h"
 #include "j1Scene.h"
-#include "j1Map.h"
 #include "j1App.h"
 #include "j2EntityManager.h"
 
@@ -29,9 +28,9 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	tex = new j1Textures();
 	audio = new j1Audio();
 	scene = new j1Scene();
-	map = new j1Map();
+	/*map = new j1Map();*/
 	entity_manager = new j2EntityManager();
-	
+	/*fow_manager = new FowManager();*/
 
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
@@ -39,10 +38,10 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(win);
 	AddModule(tex);
 	AddModule(audio);
-	AddModule(map);
+	/*AddModule(map);*/
 	AddModule(scene);
 	AddModule(entity_manager);
-	
+	/*AddModule(fow_manager);*/
 
 	// render last to swap buffer
 	AddModule(render);

@@ -1,0 +1,49 @@
+﻿  DummyEnemy.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  j1App.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1app.cpp(99): error C2664: 'bool j1Module::Awake(pugi::xml_node &)': cannot convert argument 1 from 'pugi::xml_node' to 'pugi::xml_node &'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1app.cpp(99): note: A non-const reference may only be bound to an lvalue
+  j1Audio.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(161): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(261): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(268): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(275): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(283): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(290): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(297): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(305): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(312): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(319): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(327): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(334): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\j1audio.cpp(341): warning C4018: '<=': signed/unsigned mismatch
+  j1Render.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  j1Scene.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  j1Textures.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  j2EntityManager.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  Player.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(44): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(129): note: see reference to class template instantiation 'p2Point<TYPE>' being compiled
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\full_code\audio_manager-spatial_sound\p2point.h(54): error C2760: syntax error: unexpected token 'identifier', expected ';'
+  pugixml.cpp
+  Generating Code...

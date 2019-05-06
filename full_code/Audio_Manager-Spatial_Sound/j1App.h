@@ -16,7 +16,7 @@ class j1Audio;
 class j1Scene;
 class j1Map;
 class j2EntityManager;
-
+//class FowManager;
 
 
 class j1App
@@ -86,9 +86,9 @@ public:
 	j1Textures*			tex;
 	j1Audio*			audio;
 	j1Scene*			scene;
-	j1Map*				map;
+	/*j1Map*				map;*/
 	j2EntityManager*    entity_manager;
-	
+	/*FowManager*         fow_manager;*/
 
 private:
 

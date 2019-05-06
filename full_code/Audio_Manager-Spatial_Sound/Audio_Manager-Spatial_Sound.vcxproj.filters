@@ -9,6 +9,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="core\Scenes">
+      <UniqueIdentifier>{493acd60-3eaa-45c5-a856-cdbd83dfbb52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Entities">
+      <UniqueIdentifier>{a36c19a6-192a-47d0-9f17-61a40ec6f0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Tools">
+      <UniqueIdentifier>{81693ddc-039a-47a5-a94a-47a22e224bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Tools\PuguiXML">
+      <UniqueIdentifier>{c239575e-b5f6-4e4d-95de-e848d1e7153e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1App.h">
@@ -26,6 +38,42 @@
     <ClInclude Include="p2Point.h">
       <Filter>utilities</Filter>
     </ClInclude>
+    <ClInclude Include="j1Scene.h">
+      <Filter>core\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyEnemy.h">
+      <Filter>core\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>core\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="j2Entity.h">
+      <Filter>core\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="j2EntityManager.h">
+      <Filter>core\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Audio.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Input.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Render.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Window.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Textures.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="pugiconfig.hpp">
+      <Filter>core\Tools\PuguiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml.hpp">
+      <Filter>core\Tools\PuguiXML</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="j1App.cpp">
@@ -36,6 +84,36 @@
     </ClCompile>
     <ClCompile Include="p2Log.cpp">
       <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Scene.cpp">
+      <Filter>core\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyEnemy.cpp">
+      <Filter>core\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>core\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="j2EntityManager.cpp">
+      <Filter>core\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Audio.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Input.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Render.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Window.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Textures.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>core\Tools\PuguiXML</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
