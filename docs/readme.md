@@ -58,7 +58,7 @@ Now that we have reviewed the functions and concepts we will use, we can start w
      
  ### TODO 2
  In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function  
- ** TODO 2.1 
+ * TODO 2.1 
    Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx
  * TODO 2.2
    Declare the entities(you can start with the player(P1) and 2 enemies
@@ -70,37 +70,41 @@ Now that we have reviewed the functions and concepts we will use, we can start w
    Load all the fx you want to use(remember one per entity)
    
    
-  <h3>TODO 3</h3>
+  ### TODO 3
   
-     <ul>
-   <li><h4> TODO 3.1</h4> We have to modify PlayFx to work with angle and distance and simulate spatial sound</li>
-   <li><h4> TODO 3.2</h4> We add the Mix_VolumeChunk and Mix_SetPosition</li>
-   <li><h4> TODO 3.3</h4> We pass to Spatial(): j2Entity* emiter & j2Entity* receiver, this will be the 2 entities that will interact with the sound, an fx, a channel and volume </li>
-  <li><h4> TODO 3.4</h4> We call to PlayFx() </li>
-    </ul>
+     
+  * TODO 3.1 
+  We have to modify PlayFx to work with angle and distance and simulate spatial sound
+  * TODO 3.2 
+  We add the Mix_VolumeChunk and Mix_SetPosition
+ * TODO 3.3
+  We pass to Spatial(): j2Entity* emiter & j2Entity* receiver, this will be the 2 entities that will interact with the sound,     an fx, a channel and volume 
+ * TODO 3.4 
+We call to PlayFx() 
     
-  <h3>TODO 4</h3>
+    
+  ### TODO 4
   
-     <ul>
-   <li><h4> TODO 4.1</h4> We are going to create some areas for our entities to react, and create an angle(Sint16) and a distance(Uint8)</li>
-   <li><h4> TODO 4.2</h4> We try to understand how the function works with the Diagonals and entities positions</li>
-   <li><h4> TODO 4.3</h4> Now is our turn to add the parameters in the last Diagonal case </li>
-    </ul>
+  * TODO 4.1 We are going to create some areas for our entities to react, and create an angle(Sint16) and a distance(Uint8)
+   * TODO 4.2 We try to understand how the function works with the Diagonals and entities positions
+   * TODO 4.3 Now is our turn to add the parameters in the last Diagonal case 
     
-  <h3>TODO 5</h3>
-       In this last TODO, we just need to call Spatial function and pass it two entities and a fx from the emitter(previous TODO'S)
+    
+  ### TODO 5
+   In this last TODO, we just need to call Spatial function and pass it two entities and a fx from the emitter(previous TODO'S)
       
       
- <h2>TODO Solutions</h2>
-    <ul>
-  <li><h4>TODO 5 </h4></li>
+ ## TODO Solutions
+    
+  #### TODO 5
   <img src="C:\Users\Usuario\Desktop\MEMS\IMAGES_RESEARCH\5.png">
-    </ul>
- <h2>Sources</h2>
-   <ul>
-    <li><a href="https://www.acmi.net.au/ideas/read/evolution-audio-videogames/">Audio Evolution in Videogames</a></li>
-    <li><a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">SDL_Mixer documentation</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Panning_(audio)">Audio Panning</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Stereophonic_sound">Audio Stereo</a></li>
-    <li>Getting Started with C++ Audio Programming for Game Development(Recommended)</li>
-   </ul>
+   
+    
+ ## Sources
+   
+   * <a href="https://www.acmi.net.au/ideas/read/evolution-audio-videogames/">Audio Evolution in Videogames</a>
+   * <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">SDL_Mixer documentation</a>
+   * <a href="https://en.wikipedia.org/wiki/Panning_(audio)">Audio Panning</a>
+   * <a href="https://en.wikipedia.org/wiki/Stereophonic_sound">Audio Stereo</a>
+   * Getting Started with C++ Audio Programming for Game Development(Recommended)
+  
