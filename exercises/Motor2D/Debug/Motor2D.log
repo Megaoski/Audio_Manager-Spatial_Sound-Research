@@ -1,4 +1,81 @@
-﻿  j1Scene.cpp
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1scene.cpp(79): warning C4101: 'y': unreferenced local variable
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1scene.cpp(79): warning C4101: 'x': unreferenced local variable
-  Motor2D.vcxproj -> C:\Users\Usuario\Documents\GitHub\Audio_Manager-Spatial_Sound-Research\exercises\Debug\Audio_Manager-Spatial_Audio.exe
+﻿  Player.cpp
+  j1App.cpp
+  j1Audio.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(176): error C2511: 'bool j1Audio::PlayFx(void)': overloaded member function not found in 'j1Audio'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.h(16): note: see declaration of 'j1Audio'
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(179): error C2597: illegal reference to non-static member 'j1Module::active'
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(183): error C2065: 'id': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(186): error C2065: 'id': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(186): error C2672: 'std::next': no matching overloaded function found
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(189): error C2065: 'channel': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(189): error C2065: 'repeat': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(192): error C2065: 'id': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(258): error C2511: 'void j1Audio::Spatial(void)': overloaded member function not found in 'j1Audio'
+  c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.h(16): note: see declaration of 'j1Audio'
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(271): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(271): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(271): error C2065: 'close_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(273): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(274): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(275): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(278): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(278): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(278): error C2065: 'medium_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(280): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(281): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(282): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(285): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(285): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(285): error C2065: 'long_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(287): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(288): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(289): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(293): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(293): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(293): error C2065: 'close_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(295): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(296): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(297): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(300): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(300): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(300): error C2065: 'medium_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(302): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(303): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(304): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(307): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(307): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(307): error C2065: 'long_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(309): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(310): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(311): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(315): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(315): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(315): error C2065: 'close_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(317): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(318): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(319): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(322): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(322): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(322): error C2065: 'medium_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(324): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(325): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(326): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(329): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(329): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(329): error C2065: 'long_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(331): error C2065: 'angle': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(332): error C2065: 'distance': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(333): error C2065: 'volume': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(338): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(338): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(338): error C2065: 'close_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(342): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(342): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(342): error C2065: 'medium_area': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(347): error C2065: 'receiver': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(347): error C2065: 'emiter': undeclared identifier
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1audio.cpp(347): error C2065: 'long_area': undeclared identifier
+  j1Scene.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1scene.cpp(67): warning C4101: 'y': unreferenced local variable
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\exercises\motor2d\j1scene.cpp(67): warning C4101: 'x': unreferenced local variable
+  Generating Code...
