@@ -30,14 +30,14 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
  
 <h2>How to manage it?</h2>
     In this research we will see how we can manage this spatial sound effect for our games, using the well known SDL_Mixer library.
-    Check the  <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">doc</a>
+    Check the <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">doc</a>
     
     
   <h3>SDL_Mixer</h3>
   SDL_Mixer is an audio library that belongs to SDL(SimpleDirectMediaLayer) and that is open source software. Its very easy to use and     has some good functionalities, but to achieve spatial sound effect it gets a little bit short. If after the exercise you're interested   in how to achieve better spatial sound effects, i encourage you to visit OpenAL by Creative Labs.
   <h3>Core concepts & functions</h3>
   <ul>
-    <li>_Mix_Music*: This is an opaque data type used for Music data. We will use it to store our music files</li> 
+    <li>_Mix_Music*:</u> This is an opaque data type used for Music data. We will use it to store our music files</li> 
     <li>Mix_Chunk*:  The internal format for an audio chunk. This structure is what we will use to store our fx's</li> 
     <li>PlayMusic(): Play the loaded music loop times through from start to finish. The previous music will be halted, or if fading out     it waits (blocking) for that to finish.</li>
     <li>LoadFx(): Returns: a pointer to the sample as a Mix_Chunk. NULL is returned on errors. We can load WAV files , but we can also       use Mix_LoadWAV_RW() to call other formats like vorbis</li>
@@ -86,3 +86,10 @@ Now that we have reviewed the functions and concepts we will use, we can start w
  <h2>TODO Solutions</h2>
  
  <h2>Sources</h2>
+   <ul>
+    <li><a href="https://www.acmi.net.au/ideas/read/evolution-audio-videogames/">Audio Evolution in Videogames</a></li>
+    <li><a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">SDL_Mixer documentation</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Panning_(audio)">Audio Panning</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Stereophonic_sound">Audio Stereo</a></li>
+    <li>Getting Started with C++ Audio Programming for Game Development(Recommended)</li>
+   </ul>
