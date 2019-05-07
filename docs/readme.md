@@ -60,13 +60,16 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   </ul>
   
 ## Exercise
+
 Now that we have reviewed the functions and concepts we will use, we can start with the exercise. The exercise will consist in inplementing a function(Spatial) that will relate 2 entities(emitter and receiver) and a fx. This fx will be assignated to the emitter, and the receiver(Player) will hear it different from a different direction or distance.
 
- ### TODO 1
+### TODO 1
+
  In the first TODO we will allocate as much channels as we desire. Keep in mind this channels will be used for the exercise, so    
  create at least 5(also don't create 1000!)
      
- ### TODO 2
+### TODO 2
+
  In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function  
  * TODO 2.1 
    Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx
@@ -80,7 +83,7 @@ Now that we have reviewed the functions and concepts we will use, we can start w
    Load all the fx you want to use(remember one per entity)
    
    
-  ### TODO 3
+ ### TODO 3
   
      
   * TODO 3.1 
@@ -93,7 +96,7 @@ Now that we have reviewed the functions and concepts we will use, we can start w
 We call to PlayFx() 
     
     
-  ### TODO 4
+### TODO 4
   
   * TODO 4.1 We are going to create some areas for our entities to react, and create an angle(Sint16) and a distance(Uint8)
    * TODO 4.2 We try to understand how the function works with the Diagonals and entities positions
@@ -104,7 +107,7 @@ We call to PlayFx()
    In this last TODO, we just need to call Spatial function and pass it two entities and a fx from the emitter(previous TODO'S)
       
       
- ## TODO Solutions
+## TODO Solutions
  
   #### TODO 1
   
