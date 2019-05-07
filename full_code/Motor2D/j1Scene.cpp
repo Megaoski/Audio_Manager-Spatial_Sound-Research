@@ -37,7 +37,8 @@ bool j1Scene::Start()
 {
 	
 
-	
+	// TODO 2.4: Create the number of entities you want(start with 2)
+
 	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_player, nullptr, 1, -1, 100, 270, 30);	
 	DO = App->entity_manager->CreateEntity(DO, ENTITY_TYPE::ENEMY, {200,700 }, fx_do, nullptr/*"audio/fx/do.wav"*/, 2, -1, DEFAULT_FX_VOLUME, 0, 200);
 	/*RE = App->entity_manager->CreateEntity(RE, ENTITY_TYPE::ENEMY, { 300,800 }, fx_re, "audio/fx/re.wav", 3, -1, DEFAULT_FX_VOLUME, 45, 200);
@@ -50,6 +51,7 @@ bool j1Scene::Start()
 
 	//TEST = App->entity_manager->CreateEntity(TEST, ENTITY_TYPE::ENEMY, { -200,700 }, fx_test_spatial, nullptr/* "audio/fx/change.wav"*/, 10, -1, DEFAULT_FX_VOLUME, 90, 200);
 
+	//TODO 2.5: Load all the fx you want to use(remember one per entity), PLAYER IS NOT NECESSARY SINCE HE IS NOT THE EMITTER OF SOUND IN THS SPATIAL FUNCTION
 	//LOAD FX FOR WHEN NO USING ENTITIES
 	fx_do = App->audio->LoadFx("audio/fx/do.wav");
 	fx_re = App->audio->LoadFx("audio/fx/re.wav");
@@ -84,31 +86,16 @@ bool j1Scene::PreUpdate()
 // Called each loop iteration
 bool j1Scene::Update(float dt)
 {
+
+
+	//TODO 5: NOW YOU JUST CALL Spatial() WITH THE ENTITIES PREV CREATED IN THE PREVIOUS TODO'S AND A FX YOU WANT THE ENEMY TO DISPLAY(CAREFUL WITH THE CHANNEL)
+	//WHEN YOU PRESS Q, YOU'LL HEAR THEIR FX'S, YOU CAN PLAY WITH MULTIPLE ENTITIES AND SOUNDS, TO FIGURE OUT WHICH SOUND IS FROM WHOM
 	//SPATIAL SOUND WHILE MOVING BETWEEN ENTITIES
 	if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 	{
-		App->audio->Spatial(DO, P1, fx_do, 17, 0, 10);
-		App->audio->Spatial(LA, P1, fx_la, 18, 0, 10);
+		App->audio->Spatial(DO, P1, fx_do, 17, 10);
+		App->audio->Spatial(LA, P1, fx_la, 18, 10);
 	}
-
-
-	////EXERCISE NOTAS ENTITIES
-	//if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_do, 1, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_re, 2, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_E) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_mi, 3, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_fa, 4, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_T) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_sol, 5, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_la, 6, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_si, 7, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	//if (App->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_do2, 8, 0, DEFAULT_FX_VOLUME, NULL, NULL);
 
 
 	//AUDIO TESTING

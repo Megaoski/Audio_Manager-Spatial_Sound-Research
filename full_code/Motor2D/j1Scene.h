@@ -47,6 +47,7 @@ private:
 	
 
 public:
+	//TODO 2.2: Create the entities(you can start with the player(P1) and 2 enemies
 	j2Entity* P1 = nullptr;
 	j2Entity* DO = nullptr;
 	j2Entity* RE = nullptr;
@@ -58,6 +59,7 @@ public:
 	j2Entity* DO2 = nullptr;
 	j2Entity* TEST = nullptr;
 	
+	//TODO 2.3: Create the fx that our entities will use(do at least 3)
 	unsigned int fx_player = 0;
 	unsigned int fx_test_spatial = 0;
 	unsigned int fx_do = 0;

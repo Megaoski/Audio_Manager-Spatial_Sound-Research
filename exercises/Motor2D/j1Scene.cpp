@@ -37,7 +37,7 @@ bool j1Scene::Start()
 {
 	
 
-	//TODO 2.4: uncomment the number of entities you created(start with 1 or 2)
+	//TODO 2.4: Create the number of entities you want(start with 2)
 
 	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_player, nullptr, 1, -1, DEFAULT_FX_VOLUME, 270, 30);	
 	DO = App->entity_manager->CreateEntity(DO, ENTITY_TYPE::ENEMY, {200,700 }, fx_do, nullptr, 2, -1, DEFAULT_FX_VOLUME, 0, 200);

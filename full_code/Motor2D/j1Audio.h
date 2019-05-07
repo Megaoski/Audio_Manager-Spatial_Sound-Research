@@ -52,7 +52,7 @@ public:
 	int StopFx(int channel);
 
 	
-	void Spatial(j2Entity* emiter, j2Entity* receiver, unsigned int fx, int channel, int repeat, int volume); 
+	void Spatial(j2Entity* emiter, j2Entity* receiver, unsigned int fx, int channel,  int volume); 
 	int FxPosition(int channel, Sint16 angle, Uint8 distance);
 
 	_Mix_Music*			music_combat = NULL;

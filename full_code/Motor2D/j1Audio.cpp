@@ -52,6 +52,7 @@ bool j1Audio::Awake(pugi::xml_node& config)
 
 	music_combat = Mix_LoadMUS("audio/combat.ogg");
 
+	//TODO 1: Allocate the number of channels you'll use for the fx's(tip, look at Mix_AllocateChannels from the documentation)
 	Mix_AllocateChannels(20);//WE ALLOCATE THE NUMBER OF CHANNELS WE WANT
 	
 	
@@ -168,7 +169,7 @@ unsigned int j1Audio::LoadFx(const char* path)
 }
 
 
-
+//TODO 3.1 : WE WANT TO MODIFY PlayFx, WE WILL PASS THEM AN FX ID, A CHANNEL TO PLAY ON, IF IT REPEATS, THE VOLUME AND A Sint16 angle and Uint8 distance
 // Play WAV
 bool j1Audio::PlayFx(unsigned int id, int channel, int repeat, int volume, Sint16 angle, Uint8 distance)
 {
@@ -182,6 +183,7 @@ bool j1Audio::PlayFx(unsigned int id, int channel, int repeat, int volume, Sint1
 	{
 		std::list <Mix_Chunk*>::const_iterator it;
 		it = std::next(stl_fx.begin(), id - 1);
+		//TODO 3.2: WE ADD THE METHODS Mix_VolumeChunk(*it, volume) TO MODIFY THE VOLUME OF THE CHUNK AND WE ALSO ADD Mix_SetPosition(channel, angle, distance);
 		Mix_VolumeChunk(*it, volume);//use to change volume of the fx
 		Mix_SetPosition(channel, angle, distance); //spatial sound
 		Mix_PlayChannel(channel, *it, repeat);//put channel , if -1 gets the next free channel available
@@ -251,15 +253,23 @@ int j1Audio::StopFx(int channel)
 	return Mix_HaltChannel(channel);
 }
 
-void j1Audio::Spatial(j2Entity* emiter,j2Entity* receiver, unsigned int fx, int channel, int repeat, int volume)
+//TODO 3.3 :WE PASS TO SPATIAL: j2Entity* emiter & j2Entity* receiver, this will be the 2 entities that will interact with the sound, an fx, a channel and volume
+void j1Audio::Spatial(j2Entity* emiter,j2Entity* receiver, unsigned int fx, int channel, int volume)
 {
+
+	//TODO 4.1: WE ARE GOING TO CREATE THE ANGLE AND DISTANCE(USE Sint16 & Uint8), AND 3 AREAS(CLOSE, MEDIUM AND LONG),THIS AREAS SHOULD BE UINT.
+	//WE WILL ASIGNATE 250/1000/2000 TO THE AREAS(CLOSE, MEDIUM,LONG) AND WE WILL SET THE ANGLE AND DISTANCE TO 0.
+
 	uint close_area = 250;//must be an uint never negative to avoid mindfuck calculations
 	uint medium_area = 1000;
 	uint long_area = 2000;
 	Sint16 angle = 0;
 	Uint8 distance = 0;
-	
+	int repeat = 0;
 
+	//TODO 4.2:  THIS ACTS AS A COMPASS TO THE PLAYER, THIS FIRST PACK GETS IF THE PLAYER IS MOVING TOWARDS THE ENEMY ENTITY FROM THE LEFT-LOW DIAGONAL.
+	//IF IT IS WE WANT TO CHANGE THE VALUE OF THE ANGLE TO  90deg(the sound will come from the right), A DISTANCE(10/120/230) DEPENDING OF THE AREA
+	//AND A VOLUME(128/50/10) DEPENDING OF THE AREA
 	//CLOSE AREA-MID AREA-LONG AREA
 	if (emiter->position.x - receiver->position.x <= close_area && receiver->position.y - emiter->position.y <= close_area)//diagonal izq-abajo
 	{
@@ -326,6 +336,7 @@ void j1Audio::Spatial(j2Entity* emiter,j2Entity* receiver, unsigned int fx, int 
 		volume = 10;
 		
 	}
+	////TODO 4.3, SEEING HOW THE OTHER 3 DIAGONALS WORK, TRY TO  FIGURE OUT HOW TO DO THE LAST ONE(DIAGONAL FROM RIGHT TO UPWARDS)
 
 	if (receiver->position.x - emiter->position.x <= close_area && emiter->position.y - receiver->position.y <= close_area)//diagonal der-arriba
 	{
@@ -353,7 +364,7 @@ void j1Audio::Spatial(j2Entity* emiter,j2Entity* receiver, unsigned int fx, int 
 	
 	
 	
-	
+	//TODO 3.4 : WE CALL TO PlayFx()
 	PlayFx(fx, channel, repeat, volume, angle, distance);
 	
 }
