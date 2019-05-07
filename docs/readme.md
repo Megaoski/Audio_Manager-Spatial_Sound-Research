@@ -1,9 +1,9 @@
-<h1>AUDIO MANAGER & SPATIAL AUDIO RESEARCH</h1>
+# AUDIO MANAGER & SPATIAL AUDIO RESEARCH
 
 Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Larios</a>, student of the [Bachelor’s Degree in Video Games by UPC at CITM](https://www.citm.upc.edu/ing/estudis/graus-videojocs/ "Link to the Degree"). This content is generated for the second year’s subject Project 2, under supervision of lecturer <a href="https://www.linkedin.com/in/ricardpillosu/">Ricard Pillosu</a>
 
 
-<h2>A little bit of history</h2>
+## A little bit of history
 
   Sound has become a very important theme in the world of the videogames nowadays, it's inexplicable for us to play to a game and to not   have some type of music or fx's. But this hasn't always been the case.
   If we look a few years ago, more exactly in the 70's, when Pong was released as an arcade videogame, it already had some fx's to show   when the players collided with the ball or when the ball collided with the walls, but it was just a change of the pitch in the "beep"   sound. This small fx already creates the sensation of different actions(padding the ball, collisding with the wall or scoring)
@@ -14,25 +14,25 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   Nowadays it's totally different, we can create a videogame with lots of cool fx's and music without catching our fingers with some 
   memory issues
 
-<h2>Audio Manager & Spatial Audio, what are they?</h2>
-<h3>Audio Manager</h3>
+## Audio Manager & Spatial Audio, what are they?
+### Audio Manager
   An Audio Manager is a tool/part of the code of our videogame, that let's us create, manipulate or erase Music and Fx's in a game.
   In our case, we will be using j1Audio.h and j1Audio.cpp files to do so.
-<h3>Spatial Sound</h3>
+### Spatial Sound
   <a href="https://www.youtube.com/watch?v=WYdIidUIbAs">Spatial Sound</a> is a sound effect that allows us the player/listener 
   to recognize the space, direction of the sound and distance between us and that sound while listening to it. Some people   
   call it the 3d sound effect
   Nowadays is a really common sound effect in the videogames, as we can see in fps games this is key for example, to figure out the       position of the enemy player.
   A good example is Apex Legends, in this fps we can hear from where position the enemy is shooting us, or from which way he is walking.
   This feature allows the players to train that sound accuracy to figure out faster and more effectively from which direction he will     face an unseen enemy.
-<h2>How to manage it?</h2>
+## How to manage it?
   In this research we will see how we can manage this spatial sound effect for our games, using the well known SDL_Mixer library.
   Check the <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">doc</a>
     
     
-  <h3>SDL_Mixer</h3>
+  #### SDL_Mixer
   SDL_Mixer is an audio library that belongs to SDL(SimpleDirectMediaLayer) and that is open source software. Its very easy to use and     has some good functionalities, but to achieve spatial sound effect it gets a little bit short. If after the exercise you're interested   in how to achieve better spatial sound effects, i encourage you to visit OpenAL by Creative Labs.
-  <h3>Core concepts & functions</h3>
+  ### Core concepts & functions
   <ul>
   <li><strong>_Mix_Music*:</strong> This is an opaque data type used for Music data. We will use it to store our music files</li> 
     <li><strong>Mix_Chunk*:</strong>  The internal format for an audio chunk. This structure is what we will use to store our fx's</li> 
@@ -49,23 +49,26 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
      exercise</li>
   </ul>
   
-<h2>Exercise</h2>
+## Exercise
 Now that we have reviewed the functions and concepts we will use, we can start with the exercise. The exercise will consist in inplementing a function(Spatial) that will relate 2 entities(emitter and receiver) and a fx. This fx will be assignated to the emitter, and the receiver(Player) will hear it different from a different direction or distance.
 
-  <h3>TODO 1</h3>
-     In the first TODO we will allocate as much channels as we desire. Keep in mind this channels will be used for the exercise, so    
-     create   at least 5(also don't create 1000!)
+ ### TODO 1
+ In the first TODO we will allocate as much channels as we desire. Keep in mind this channels will be used for the exercise, so    
+ create   at least 5(also don't create 1000!)
      
-  <h3>TODO 2</h3>
-     In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function  
-     
-   <ul>
-   <li><h4> TODO 2.1</h4> Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx</li>
-   <li><h4> TODO 2.2</h4> Declare the entities(you can start with the player(P1) and 2 enemies</li>
-   <li><h4> TODO 2.3</h4> Create the fx that our entities will use(do at least 3) </li>
-   <li><h4> TODO 2.4</h4> Create the number of entities you want(start with 2)</li>
-   <li><h4> TODO 2.5</h4> Load all the fx you want to use(remember one per entity)</li>
-   </ul>
+ ### TODO 2
+ In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function  
+ ** TODO 2.1 
+   Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx
+ * TODO 2.2
+   Declare the entities(you can start with the player(P1) and 2 enemies
+ * TODO 2.3 
+   Create the fx that our entities will use(do at least 3) 
+ * TODO 2.4 
+   Create the number of entities you want(start with 2)
+ * TODO 2.5
+   Load all the fx you want to use(remember one per entity)
+   
    
   <h3>TODO 3</h3>
   
