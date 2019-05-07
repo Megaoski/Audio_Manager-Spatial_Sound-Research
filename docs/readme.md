@@ -30,9 +30,9 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   Check the <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">doc</a>
     
     
-  #### SDL_Mixer
+### SDL_Mixer
   SDL_Mixer is an audio library that belongs to SDL(SimpleDirectMediaLayer) and that is open source software. Its very easy to use and     has some good functionalities, but to achieve spatial sound effect it gets a little bit short. If after the exercise you're interested   in how to achieve better spatial sound effects, i encourage you to visit OpenAL by Creative Labs.
-  ### Core concepts & functions
+### Core concepts & functions
   <ul>
   <li><strong>_Mix_Music*:</strong> This is an opaque data type used for Music data. We will use it to store our music files</li> 
     <li><strong>Mix_Chunk*:</strong>  The internal format for an audio chunk. This structure is what we will use to store our fx's</li> 
@@ -95,9 +95,54 @@ We call to PlayFx()
       
       
  ## TODO Solutions
-    
+ 
+  #### TODO 1
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/1.PNG"></p>  
+  
+  #### TODO 2.2
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.2.PNG"></p>
+  
+  #### TODO 2.3
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.3.PNG"></p>
+  
+  #### TODO 2.4
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.4.PNG"></p>
+  
+  #### TODO 2.5
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.5.PNG"></p>
+  
+  #### TODO 3.1
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.1.PNG"></p>
+  
+  #### TODO 3.2
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.2.PNG"></p>
+  
+  #### TODO 3.3
+ 
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.3.PNG"></p>
+  
+  #### TODO 3.4
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.4.PNG"></p>
+  
+  #### TODO 4.1
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.1.PNG"></p>
+  
+  #### TODO 4.3
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.3.PNG"></p>
+  
   #### TODO 5
-  <img src="C:\Users\Usuario\Desktop\MEMS\IMAGES_RESEARCH\5.png">
+  
+  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/5.PNG"></p>
    
     
  ## Sources
