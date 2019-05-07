@@ -29,8 +29,8 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   
  
 <h2>How to manage it?</h2>
-    In this research we will see how we can manage this spatial sound effect for our games, using the well known SDL_Mixer library
-    Check the [doc](https://www.google.com/ "Link to google")
+    In this research we will see how we can manage this spatial sound effect for our games, using the well known SDL_Mixer library.
+    Check the  <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">doc</a>
     
     
   <h3>SDL_Mixer</h3>
@@ -39,16 +39,17 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   <ul>
     <li>_Mix_Music*: This is an opaque data type used for Music data. We will use it to store our music files</li> 
     <li>Mix_Chunk*:  The internal format for an audio chunk. This structure is what we will use to store our fx's</li> 
-    <li>PlayMusic():</li>
-    <li>LoadFx():</li>
-    <li>PlayFx():</li>
-    <li>StopFx():</li>
+    <li>PlayMusic(): Play the loaded music loop times through from start to finish. The previous music will be halted, or if fading out     it waits (blocking) for that to finish.</li>
+    <li>LoadFx(): Returns: a pointer to the sample as a Mix_Chunk. NULL is returned on errors. We can load WAV files , but we can also       use Mix_LoadWAV_RW() to call other formats like vorbis</li>
+    <li>StopFx(): We call  Mix_HaltChannel(), this receives a channel and stops it. If -1 stops all channels</li>
     <li>Mix_SetPosition(): This effect emulates a simple 3D audio effect. It’s not all that realistic, but it can help
     improve some level of realism. By giving it the angle and distance from the camera’s point
     of view, the effect pans and attenuates volumes.</li> 
     <li>Mix_PlayChannel(): Play chunk on channel, or if channel is -1, pick the first free unreserved channel. The sample
     will play for loops +1 number of times</li> 
     <li>Mix_VolumeChunk(): This function receives a chunk and puts that chunk channel volume to the new indicated</li> 
+    <li>PlayFx():This function uses Mix_PlayChannel to play an fx, it will be one of the functions we will modify during the   
+     exercise</li>
   </ul>
   
 <h2>Exercise</h2>
