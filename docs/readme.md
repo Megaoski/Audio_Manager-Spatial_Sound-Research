@@ -31,7 +31,7 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   A good example is Apex Legends, in this fps we can hear from where position the enemy is shooting us, or from which way he is walking.
   This feature allows the players to train that sound accuracy to figure out faster and more effectively from which direction he will     face an unseen enemy.
   
-   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/vr.png"></p>
+   
    
   Vr games also need the Spatial Audio sound effect to simulate the sound for the player
   
@@ -111,51 +111,51 @@ We call to PlayFx()
  
   #### TODO 1
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/1.PNG"></p>  
+ 
   
   #### TODO 2.2
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.2.PNG"></p>
+
   
   #### TODO 2.3
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.3.PNG"></p>
+ 
   
   #### TODO 2.4
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.4.PNG"></p>
+ 
   
   #### TODO 2.5
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.5.PNG"></p>
+  
   
   #### TODO 3.1
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.1.PNG"></p>
+ 
   
   #### TODO 3.2
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.2.PNG"></p>
+  
   
   #### TODO 3.3
  
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.3.PNG"></p>
+  
   
   #### TODO 3.4
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.4.PNG"></p>
+  
   
   #### TODO 4.1
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.1.PNG"></p>
+
   
   #### TODO 4.3
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.3.PNG"></p>
+  
   
   #### TODO 5
   
-  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/5.PNG"></p>
+  
    
     
  ## Sources
