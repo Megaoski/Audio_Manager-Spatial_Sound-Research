@@ -38,11 +38,6 @@ bool Player::Start()
 bool Player::Update(float dt, bool do_logic)
 {
 
-
-	/*if (App->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)*/
-	//App->audio->Spatial(App->scene->TEST, App->scene->P1, App->scene->fx_test_spatial, 10, -1, 10);
-
-
 	
 
 	iPoint last_pos = position;
@@ -73,6 +68,14 @@ bool Player::Update(float dt, bool do_logic)
 	}
 
 	
+
+	if (App->input->GetKey(SDL_SCANCODE_G) == KEY_DOWN)
+	{
+		App->scene->P1->position.x = App->scene->DO->position.x;
+		App->scene->P1->position.y = App->scene->DO->position.y;
+		
+
+	}
 
 	App->render->FollowPlayer(position.x - last_pos.x, position.y - last_pos.y);
 

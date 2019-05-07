@@ -11,6 +11,7 @@
 #include "j2EntityManager.h"
 #include "Player.h"
 #include "Enemy.h"
+#include "j1Render.h"
 
 
 j1Scene::j1Scene() : j1Module()
@@ -37,17 +38,17 @@ bool j1Scene::Start()
 	
 
 	
-	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_do, nullptr, 1, -1, 100, 270, 30);	
-	/*DO = App->entity_manager->CreateEntity(DO, ENTITY_TYPE::ENEMY, {70,700 }, fx_do, "audio/fx/do.wav", 2, -1, DEFAULT_FX_VOLUME, 0, 200);*/
+	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_player, nullptr, 1, -1, 100, 270, 30);	
+	DO = App->entity_manager->CreateEntity(DO, ENTITY_TYPE::ENEMY, {200,700 }, fx_do, nullptr/*"audio/fx/do.wav"*/, 2, -1, DEFAULT_FX_VOLUME, 0, 200);
 	/*RE = App->entity_manager->CreateEntity(RE, ENTITY_TYPE::ENEMY, { 300,800 }, fx_re, "audio/fx/re.wav", 3, -1, DEFAULT_FX_VOLUME, 45, 200);
 	MI = App->entity_manager->CreateEntity(MI, ENTITY_TYPE::ENEMY, { 400,900 }, fx_mi, "audio/fx/mi.wav", 4, -1, DEFAULT_FX_VOLUME, 90, 200);
 	FA = App->entity_manager->CreateEntity(FA, ENTITY_TYPE::ENEMY, { 300,1000 }, fx_fa, "audio/fx/fa.wav", 5, -1, DEFAULT_FX_VOLUME, 135, 200);
-	SOL = App->entity_manager->CreateEntity(SOL, ENTITY_TYPE::ENEMY, { 70,1100 }, fx_sol, "audio/fx/sol.wav", 6, -1, DEFAULT_FX_VOLUME, 180, 200);
-	LA = App->entity_manager->CreateEntity(LA, ENTITY_TYPE::ENEMY, { -100,1000 }, fx_la, "audio/fx/la.wav", 7, -1, DEFAULT_FX_VOLUME, 225, 200);
-	SI = App->entity_manager->CreateEntity(SI, ENTITY_TYPE::ENEMY, { -200,900 }, fx_si, "audio/fx/si.wav", 8, -1, DEFAULT_FX_VOLUME, 270, 200);
-	DO2 = App->entity_manager->CreateEntity(DO2, ENTITY_TYPE::ENEMY, { -100,800 }, fx_do2, "audio/fx/do2.wav", 9, -1, DEFAULT_FX_VOLUME, 315, 200);*/
+	SOL = App->entity_manager->CreateEntity(SOL, ENTITY_TYPE::ENEMY, { 70,1100 }, fx_sol, "audio/fx/sol.wav", 6, -1, DEFAULT_FX_VOLUME, 180, 200);*/
+	LA = App->entity_manager->CreateEntity(LA, ENTITY_TYPE::ENEMY, { -100,1000 }, fx_la, nullptr, 7, -1, DEFAULT_FX_VOLUME, 225, 200);
+	/*SI = App->entity_manager->CreateEntity(SI, ENTITY_TYPE::ENEMY, { -200,900 }, fx_si, "audio/fx/si.wav", 8, -1, DEFAULT_FX_VOLUME, 270, 200);*/
+	/*DO2 = App->entity_manager->CreateEntity(DO2, ENTITY_TYPE::ENEMY, { -200,700 }, fx_do2, nullptr, 9, -1, DEFAULT_FX_VOLUME, 315, 200);*/
 
-	TEST = App->entity_manager->CreateEntity(TEST, ENTITY_TYPE::ENEMY, { -200,700 }, fx_do, nullptr/* "audio/fx/change.wav"*/, 2, -1, DEFAULT_FX_VOLUME, 90, 200);
+	//TEST = App->entity_manager->CreateEntity(TEST, ENTITY_TYPE::ENEMY, { -200,700 }, fx_test_spatial, nullptr/* "audio/fx/change.wav"*/, 10, -1, DEFAULT_FX_VOLUME, 90, 200);
 
 	//LOAD FX FOR WHEN NO USING ENTITIES
 	fx_do = App->audio->LoadFx("audio/fx/do.wav");
@@ -83,15 +84,15 @@ bool j1Scene::PreUpdate()
 // Called each loop iteration
 bool j1Scene::Update(float dt)
 {
-	//TEST SPATIAL WHILE MOVING
+	//SPATIAL SOUND WHILE MOVING BETWEEN ENTITIES
 	if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 	{
-		App->audio->Spatial(TEST, P1, fx_test_spatial, 17, 0, 10);
-	
+		App->audio->Spatial(DO, P1, fx_do, 17, 0, 10);
+		App->audio->Spatial(LA, P1, fx_la, 18, 0, 10);
 	}
-	
 
-	//EXERCISE NOTAS ENTITIES
+
+	////EXERCISE NOTAS ENTITIES
 	//if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
 	//	App->audio->PlayFx(fx_do, 1, 0, DEFAULT_FX_VOLUME, NULL, NULL);
 	//if (App->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
@@ -107,7 +108,7 @@ bool j1Scene::Update(float dt)
 	//if (App->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
 	//	App->audio->PlayFx(fx_si, 7, 0, DEFAULT_FX_VOLUME, NULL, NULL);
 	//if (App->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
-	//	App->audio->PlayFx(fx_do2, 8, 0, DEFAULT_FX_VOLUME, NULL, NULL);//canal 8 no tira
+	//	App->audio->PlayFx(fx_do2, 8, 0, DEFAULT_FX_VOLUME, NULL, NULL);
 
 
 	//AUDIO TESTING
@@ -128,11 +129,7 @@ bool j1Scene::Update(float dt)
 		App->audio->SetVolume(-1, MIX_MAX_VOLUME / 2);
 	}
 
-	if (App->input->GetKey(SDL_SCANCODE_G) == KEY_DOWN)
-	{
-		/*App->audio->Panning(-1, 255, 0);*/
-	}
-
+	
 	if (App->input->GetKey(SDL_SCANCODE_J) == KEY_DOWN)
 	{
 		App->audio->Channels(16);
@@ -141,24 +138,7 @@ bool j1Scene::Update(float dt)
 		LOG("DECODERS PLAYING: %d", App->audio->Decoders());//ME DICE EL NUMERO DE MUSIC DECODERS
 	}
 
-	//if (App->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)//LONG DISTANCE VOLUME 100%
-	//{
-	//	
-
-	//	if (P1->position.x <= E2->position.x)
-	//	{
-	//		
-	//		App->audio->PlayFx(fx, 1, -1, 100);
-	//	}
-
-	//	if (P1->position.x > E2->position.x)
-	//	{
-	//		
-	//		/*App->audio->StopFx(1);*/
-	//		App->audio->PlayFx(fx, 1, -1, 10);
-	//	}
-	//}
-	//
+	
 
 	
 	

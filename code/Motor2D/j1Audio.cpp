@@ -254,8 +254,8 @@ int j1Audio::StopFx(int channel)
 void j1Audio::Spatial(j2Entity* emiter,j2Entity* receiver, unsigned int fx, int channel, int repeat, int volume)
 {
 	uint close_area = 250;//must be an uint never negative to avoid mindfuck calculations
-	uint medium_area = 500;
-	uint long_area = 1000;
+	uint medium_area = 1000;
+	uint long_area = 2000;
 	Sint16 angle = 0;
 	Uint8 distance = 0;
 	
