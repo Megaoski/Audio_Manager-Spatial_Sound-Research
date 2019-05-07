@@ -144,6 +144,7 @@ bool j1Audio::PlayMusic(const char* path, float fade_time)
 	return ret;
 }
 
+//TODO 2.1: LOOK AT WHAT IT DOES 
  //Load WAV
 unsigned int j1Audio::LoadFx(const char* path)
 {
