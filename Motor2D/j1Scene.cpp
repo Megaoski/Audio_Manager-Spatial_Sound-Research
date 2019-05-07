@@ -10,7 +10,7 @@
 #include "j2Entity.h"
 #include "j2EntityManager.h"
 #include "Player.h"
-#include "DummyEnemy.h"
+#include "Enemy.h"
 
 
 j1Scene::j1Scene() : j1Module()
@@ -37,7 +37,7 @@ bool j1Scene::Start()
 	
 
 	
-	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_player, nullptr, 1, -1, 100, 270, 30);	
+	P1 = App->entity_manager->CreateEntity(P1, ENTITY_TYPE::PLAYER, {70,900}, fx_do, nullptr, 1, -1, 100, 270, 30);	
 	/*DO = App->entity_manager->CreateEntity(DO, ENTITY_TYPE::ENEMY, {70,700 }, fx_do, "audio/fx/do.wav", 2, -1, DEFAULT_FX_VOLUME, 0, 200);*/
 	/*RE = App->entity_manager->CreateEntity(RE, ENTITY_TYPE::ENEMY, { 300,800 }, fx_re, "audio/fx/re.wav", 3, -1, DEFAULT_FX_VOLUME, 45, 200);
 	MI = App->entity_manager->CreateEntity(MI, ENTITY_TYPE::ENEMY, { 400,900 }, fx_mi, "audio/fx/mi.wav", 4, -1, DEFAULT_FX_VOLUME, 90, 200);
@@ -47,10 +47,10 @@ bool j1Scene::Start()
 	SI = App->entity_manager->CreateEntity(SI, ENTITY_TYPE::ENEMY, { -200,900 }, fx_si, "audio/fx/si.wav", 8, -1, DEFAULT_FX_VOLUME, 270, 200);
 	DO2 = App->entity_manager->CreateEntity(DO2, ENTITY_TYPE::ENEMY, { -100,800 }, fx_do2, "audio/fx/do2.wav", 9, -1, DEFAULT_FX_VOLUME, 315, 200);*/
 
-	TEST = App->entity_manager->CreateEntity(TEST, ENTITY_TYPE::ENEMY, { -200,700 }, fx_test_spatial, "audio/fx/change.wav", 2, -1, DEFAULT_FX_VOLUME, 0, 200);
+	TEST = App->entity_manager->CreateEntity(TEST, ENTITY_TYPE::ENEMY, { -200,700 }, fx_do, nullptr/* "audio/fx/change.wav"*/, 2, -1, DEFAULT_FX_VOLUME, 90, 200);
 
 	//LOAD FX FOR WHEN NO USING ENTITIES
-	fx_do=App->audio->LoadFx("audio/fx/do.wav");
+	fx_do = App->audio->LoadFx("audio/fx/do.wav");
 	fx_re = App->audio->LoadFx("audio/fx/re.wav");
 	fx_mi = App->audio->LoadFx("audio/fx/mi.wav");
 	fx_fa = App->audio->LoadFx("audio/fx/fa.wav");
@@ -83,23 +83,31 @@ bool j1Scene::PreUpdate()
 // Called each loop iteration
 bool j1Scene::Update(float dt)
 {
-	//EXERCISE PIANO
-	/*if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
-		App->audio->PlayFx(fx_do, 1, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
-		App->audio->PlayFx(fx_re, 2, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_E) == KEY_DOWN)
-		App->audio->PlayFx(fx_mi, 3, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
-		App->audio->PlayFx(fx_fa, 4, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_T) == KEY_DOWN)
-		App->audio->PlayFx(fx_sol, 5, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)
-		App->audio->PlayFx(fx_la, 6, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
-		App->audio->PlayFx(fx_si, 7, 0, DEFAULT_FX_VOLUME, NULL, NULL);
-	if (App->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
-		App->audio->PlayFx(fx_do2, 8, 0, DEFAULT_FX_VOLUME, NULL, NULL);*/
+	//TEST SPATIAL WHILE MOVING
+	if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
+	{
+		App->audio->Spatial(TEST, P1, fx_test_spatial, 17, 0, 10);
+	
+	}
+	
+
+	//EXERCISE NOTAS ENTITIES
+	//if (App->input->GetKey(SDL_SCANCODE_Q) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_do, 1, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_W) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_re, 2, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_E) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_mi, 3, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_fa, 4, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_T) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_sol, 5, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_la, 6, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_U) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_si, 7, 0, DEFAULT_FX_VOLUME, NULL, NULL);
+	//if (App->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
+	//	App->audio->PlayFx(fx_do2, 8, 0, DEFAULT_FX_VOLUME, NULL, NULL);//canal 8 no tira
 
 
 	//AUDIO TESTING
@@ -125,7 +133,7 @@ bool j1Scene::Update(float dt)
 		/*App->audio->Panning(-1, 255, 0);*/
 	}
 
-	if (App->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
+	if (App->input->GetKey(SDL_SCANCODE_J) == KEY_DOWN)
 	{
 		App->audio->Channels(16);
 		LOG("CHANNELS: %d", App->audio->Channels(-1));//ME DICE EL NUMERO DE CANALES ALOCADOS

@@ -5,9 +5,11 @@
 #include "p2Point.h"
 #include "PugiXml\src\pugixml.hpp"
 #include <list>
+#include "j1Audio.h"
 
 class j2Entity;
 enum class ENTITY_TYPE;
+struct Mix_Chunk;
 
 typedef int16_t Sint16;
 typedef uint8_t Uint8;

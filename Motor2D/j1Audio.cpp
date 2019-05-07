@@ -51,6 +51,9 @@ bool j1Audio::Awake(pugi::xml_node& config)
 	}
 
 	music_combat = Mix_LoadMUS("audio/combat.ogg");
+
+	Mix_AllocateChannels(20);//WE ALLOCATE THE NUMBER OF CHANNELS WE WANT
+	
 	
 	return ret;
 }

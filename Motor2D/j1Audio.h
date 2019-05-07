@@ -51,7 +51,7 @@ public:
 	void ChangeTrack();
 	int StopFx(int channel);
 
-	/*void Spatial(j2Entity* emiter, j2Entity* receiver, unsigned int fx, int channel, int repeat, int volume);*/
+	
 	void Spatial(j2Entity* emiter, j2Entity* receiver, unsigned int fx, int channel, int repeat, int volume); 
 	int FxPosition(int channel, Sint16 angle, Uint8 distance);
 
@@ -60,7 +60,6 @@ public:
 private:
 	
 	_Mix_Music*			music = NULL;
-	
 	std::list<Mix_Chunk*> stl_fx;
 };
 

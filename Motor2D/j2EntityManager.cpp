@@ -4,7 +4,7 @@
 #include "j1Audio.h"
 
 //Entities
-#include "DummyEnemy.h"
+#include "Enemy.h"
 #include "Player.h"
 
 
@@ -177,7 +177,7 @@ j2Entity* j2EntityManager::CreateEntity(j2Entity* entity, ENTITY_TYPE type, iPoi
 	entity = nullptr;
 	switch (type) {
 
-	case ENTITY_TYPE::ENEMY: entity = new DummyEnemy(); break;
+	case ENTITY_TYPE::ENEMY: entity = new Enemy(); break;
 	case ENTITY_TYPE::PLAYER: entity = new Player(); break;
 	}
 	if (entity != nullptr)

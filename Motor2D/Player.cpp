@@ -19,7 +19,7 @@ Player::~Player()
 bool Player::Start()
 {
 	entity_rect = { 13,4,32,57 };
-	entity_tex = App->tex->Load("textures/entities_sprites.png");
+	entity_tex = App->tex->Load("textures/sprites.png");
 	
 	
 	if (!clock)
@@ -40,7 +40,7 @@ bool Player::Update(float dt, bool do_logic)
 
 
 	/*if (App->input->GetKey(SDL_SCANCODE_Y) == KEY_DOWN)*/
-		/*App->audio->Spatial(App->scene->TEST, App->scene->P1, App->scene->fx_test_spatial, 10, -1, 10);*/
+	//App->audio->Spatial(App->scene->TEST, App->scene->P1, App->scene->fx_test_spatial, 10, -1, 10);
 
 
 	

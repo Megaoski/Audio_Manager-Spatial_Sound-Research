@@ -1,33 +1,21 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Fog of War Research.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  DummyEnemy.cpp
-  j1Main.cpp
+﻿  Player.cpp
   j1App.cpp
   j1Audio.cpp
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(261): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(268): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(275): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(283): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(290): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(297): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(305): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(312): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(319): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(327): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(334): warning C4018: '<=': signed/unsigned mismatch
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(341): warning C4018: '<=': signed/unsigned mismatch
-  j1Input.cpp
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(264): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(271): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(278): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(286): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(293): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(300): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(308): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(315): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(322): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(330): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(337): warning C4018: '<=': signed/unsigned mismatch
+c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1audio.cpp(344): warning C4018: '<=': signed/unsigned mismatch
   j1Scene.cpp
 c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1scene.cpp(78): warning C4101: 'y': unreferenced local variable
 c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1scene.cpp(78): warning C4101: 'x': unreferenced local variable
-  j1Timer.cpp
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1timer.cpp(40): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
-c:\users\usuario\documents\github\audio_manager-spatial_sound-research\motor2d\j1timer.cpp(48): warning C4244: '=': conversion from 'float' to 'uint32', possible loss of data
   j2EntityManager.cpp
-  p2Log.cpp
-  j1Render.cpp
-  j1Textures.cpp
-  j1Window.cpp
-  Player.cpp
-  pugixml.cpp
   Generating Code...
   Motor2D.vcxproj -> C:\Users\Usuario\Documents\GitHub\Audio_Manager-Spatial_Sound-Research\Debug\Audio_Manager-Spatial_Audio.exe

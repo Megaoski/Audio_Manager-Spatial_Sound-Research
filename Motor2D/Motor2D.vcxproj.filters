@@ -34,14 +34,14 @@
     <ClCompile Include="j2EntityManager.cpp">
       <Filter>Desenvolupament  ========\Modules\Entity management</Filter>
     </ClCompile>
-    <ClCompile Include="DummyEnemy.cpp">
-      <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
     </ClCompile>
     <ClCompile Include="j1Timer.cpp">
       <Filter>Desenvolupament  ========\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -90,14 +90,14 @@
     <ClInclude Include="j2Entity.h">
       <Filter>Desenvolupament  ========\Modules\Entity management</Filter>
     </ClInclude>
-    <ClInclude Include="DummyEnemy.h">
-      <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
     </ClInclude>
     <ClInclude Include="j1Timer.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Desenvolupament  ========\Modules\Entity management\Entities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
