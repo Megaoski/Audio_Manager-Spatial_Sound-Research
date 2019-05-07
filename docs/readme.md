@@ -1,6 +1,6 @@
 <h1>AUDIO MANAGER & SPATIAL AUDIO RESEARCH</h1>
 
-Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Larios</a>, student of the [Bachelor’s Degree in Video Games by UPC at CITM](https://www.citm.upc.edu/ing/estudis/graus-videojocs/ "Link to the Degree"). This content is generated for the second year’s subject Project 2, under supervision of lecturer Ricard Pillosu.
+Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Larios</a>, student of the [Bachelor’s Degree in Video Games by UPC at CITM](https://www.citm.upc.edu/ing/estudis/graus-videojocs/ "Link to the Degree"). This content is generated for the second year’s subject Project 2, under supervision of lecturer <a href="https://www.linkedin.com/in/ricardpillosu/">Ricard Pillosu</a>
 
 
 <h2>A little bit of history</h2>
@@ -55,11 +55,31 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
 <h2>Exercise</h2>
 Now that we have reviewed the functions and concepts we will use, we can start with the exercise. The exercise will consist in inplementing a function(Spatial) that will relate 2 entities(emitter and receiver) and a fx. This fx will be assignated to the emitter, and the receiver(Player) will hear it different from a different direction or distance.
   <h3>TODO 1</h3>
-  In the first TODO we will allocate as much channels as we desire. Keep in mind this channels will be used for the exercise, so create   at least 5(also don't create 1000!)
-   <h3>TODO 2</h3>
-    <h3>TODO 3</h3>
-     <h3>TODO 4</h3>
-      <h3>TODO 5</h3>
+     In the first TODO we will allocate as much channels as we desire. Keep in mind this channels will be used for the exercise, so    
+     create   at least 5(also don't create 1000!)
+  <h3>TODO 2</h3>
+        In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function
+      <ul>
+   <li><h4> TODO 2.1</h4> Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx</li>
+   <li><h4> TODO 2.2</h4> Create the entities(you can start with the player(P1) and 2 enemies</li>
+   <li><h4> TODO 2.3</h4> Create the fx that our entities will use(do at least 3) </li>
+   <li><h4> TODO 2.4</h4> Uncomment the number of entities you created(start with 1 or 2)</li>
+   <li><h4> TODO 2.5</h4> Load all the fx you want to use(remember one per entity)</li>
+   </ul>
+  <h3>TODO 3</h3>
+     <ul>
+   <li><h4> TODO 3.1</h4> We have to modify PlayFx to work with angle and distance and simulate spatial sound</li>
+   <li><h4> TODO 3.2</h4> We add the Mix_VolumeChunk and Mix_SetPosition</li>
+   <li><h4> TODO 3.3</h4> We pass to Spatial(): j2Entity* emiter & j2Entity* receiver, this will be the 2 entities that will interact with the sound, an fx, a channel and volume </li>
+    </ul>
+  <h3>TODO 4</h3>
+     <ul>
+   <li><h4> TODO 4.1</h4> We are going to create some areas for our entities to react, and create an angle(Sint16) and a distance(Uint8)</li>
+   <li><h4> TODO 4.2</h4> We try to understand how the function works with the Diagonals and entities positions</li>
+   <li><h4> TODO 4.3</h4> Now is our turn to add the parameters in the last Diagonal case </li>
+    </ul>
+  <h3>TODO 5</h3>
+       In this last TODO, we just need to call Spatial function and pass it two entities and a fx from the emitter(previous TODO'S)
       
       
  <h2>TODO Solutions</h2>
