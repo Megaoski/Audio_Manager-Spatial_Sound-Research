@@ -19,7 +19,7 @@ Hi, i'm <a href="https://www.linkedin.com/in/oscar-larios-088270185/">Oscar Lari
   An Audio Manager is a tool/part of the code of our videogame, that let's us create, manipulate or erase Music and Fx's in a game.
   In our case, we will be using j1Audio.h and j1Audio.cpp files to do so.
 <h3>Spatial Sound</h3>
-  <a href="https://https://www.youtube.com/watch?v=WYdIidUIbAs/">Spatial Sound</a> is a sound effect that allows us the player/listener 
+  <a href="https://www.youtube.com/watch?v=WYdIidUIbAs">Spatial Sound</a> is a sound effect that allows us the player/listener 
   to recognize the space, direction of the sound and distance between us and that sound while listening to it. Some people   
   call it the 3d sound effect
   Nowadays is a really common sound effect in the videogames, as we can see in fps games this is key for example, to figure out the       position of the enemy player.
@@ -61,9 +61,9 @@ Now that we have reviewed the functions and concepts we will use, we can start w
         In this TODO, we will see what LoadFx does, also we will create the entities that will interact with our future Spatial function
       <ul>
    <li><h4> TODO 2.1</h4> Look at LoadFx and see how it works, understand the fact that you're doing push_backs of the fx into our list stl_fx</li>
-   <li><h4> TODO 2.2</h4> Create the entities(you can start with the player(P1) and 2 enemies</li>
+   <li><h4> TODO 2.2</h4> Declare the entities(you can start with the player(P1) and 2 enemies</li>
    <li><h4> TODO 2.3</h4> Create the fx that our entities will use(do at least 3) </li>
-   <li><h4> TODO 2.4</h4> Uncomment the number of entities you created(start with 1 or 2)</li>
+   <li><h4> TODO 2.4</h4> Create the number of entities you want(start with 2)</li>
    <li><h4> TODO 2.5</h4> Load all the fx you want to use(remember one per entity)</li>
    </ul>
   <h3>TODO 3</h3>
@@ -71,6 +71,7 @@ Now that we have reviewed the functions and concepts we will use, we can start w
    <li><h4> TODO 3.1</h4> We have to modify PlayFx to work with angle and distance and simulate spatial sound</li>
    <li><h4> TODO 3.2</h4> We add the Mix_VolumeChunk and Mix_SetPosition</li>
    <li><h4> TODO 3.3</h4> We pass to Spatial(): j2Entity* emiter & j2Entity* receiver, this will be the 2 entities that will interact with the sound, an fx, a channel and volume </li>
+  <li><h4> TODO 3.4</h4> We call to PlayFx() </li>
     </ul>
   <h3>TODO 4</h3>
      <ul>
