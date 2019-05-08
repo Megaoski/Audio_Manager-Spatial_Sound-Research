@@ -83,7 +83,7 @@ Now that we have reviewed the functions and concepts we will use, we can start w
    Load all the fx you want to use(remember one per entity)
    
    
- ### TODO 3
+### TODO 3
   
      
   * TODO 3.1 
@@ -103,7 +103,7 @@ We call to PlayFx()
    * TODO 4.3 Now is our turn to add the parameters in the last Diagonal case 
     
     
-  ### TODO 5
+### TODO 5
    In this last TODO, we just need to call Spatial function and pass it two entities and a fx from the emitter(previous TODO'S)
       
       
