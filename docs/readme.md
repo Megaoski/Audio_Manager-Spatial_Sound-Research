@@ -115,7 +115,7 @@ We call to PlayFx()
   
   #### TODO 2.2
   
-
+   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.2.PNG"></p>
   
   #### TODO 2.3
   
