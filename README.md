@@ -4,6 +4,8 @@ Research for Project 2 subject in CITM UPC Barcelona.
 You can donwload the release <a href="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/releases/tag/1.0/">here</a>
 or check my Research <a href="https://megaoski.github.io/Audio_Manager-Spatial_Sound-Research/">web</a>
 
+If you wanna give it a try by yourself, just download my master branch and try the exercises folder solution
+
 ## Controls:
 
 * Arrows to move
