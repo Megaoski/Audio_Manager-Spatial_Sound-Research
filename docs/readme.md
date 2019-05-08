@@ -109,56 +109,56 @@ We call to PlayFx()
       
 ## TODO Solutions
  
-  #### TODO 1
+#### TODO 1
   
    <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/1.PNG"></p>
   
-  #### TODO 2.2
+#### TODO 2.2
   
    <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.2.PNG"></p>
   
-  #### TODO 2.3
+#### TODO 2.3
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.3.PNG"></p>
   
-  #### TODO 2.4
+#### TODO 2.4
   
  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.4.PNG"></p>
   
-  #### TODO 2.5
+#### TODO 2.5
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/2.5.PNG"></p>
   
-  #### TODO 3.1
+#### TODO 3.1
   
  <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.1.PNG"></p>
   
-  #### TODO 3.2
+#### TODO 3.2
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.2.PNG"></p>
   
-  #### TODO 3.3
+#### TODO 3.3
  
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.3.PNG"></p>
   
-  #### TODO 3.4
+#### TODO 3.4
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/3.4.PNG"></p>
   
-  #### TODO 4.1
+#### TODO 4.1
   
 <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.1.PNG"></p>
   
-  #### TODO 4.3
+#### TODO 4.3
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/4.3.PNG"></p>
   
-  #### TODO 5
+#### TODO 5
   
   <p align="center"><img src="https://github.com/Megaoski/Audio_Manager-Spatial_Sound-Research/blob/master/docs/images/5.PNG"></p>
    
     
- ## Sources
+## SOURCES
    
    * <a href="https://www.acmi.net.au/ideas/read/evolution-audio-videogames/">Audio Evolution in Videogames</a>
    * <a href="https://www.libsdl.org/projects/SDL_mixer/docs/SDL_mixer_frame.html">SDL_Mixer documentation</a>
